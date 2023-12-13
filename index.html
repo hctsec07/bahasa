@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kamus Kosa Kata Bahasa Kore A-Z</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kamus Kosa Kata Bahasa Kore</h1>
+    <footer class="footer">
+    	<p class="footer__copyright">&copy; Lied Agusetiawan</p>
+    </footer>
+  </header>
+  <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchDictionary()" placeholder="Cari kata...">
+  </div>
+  
+  <div id="dictionary" class="dictionary">
+    <!-- Hasil dari kata-kata akan ditampilkan di sini -->
+  </div>
+      <script>
+        // Menonaktifkan fungsi klik kanan
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Menonaktifkan pemilihan teks
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+  <script src="script.js"></script>
+</body>
+</html>
